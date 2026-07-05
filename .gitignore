@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.claude/
+.DS_Store
+*.bak
+
+# Generated diagrams
+drawio/output/*.drawio
+graphviz/output/*.png
+graphviz/output/*.svg
+graphviz/output/*.pdf
+graphviz/output/*.jpg
+!**/output/.gitkeep

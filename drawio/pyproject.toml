@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcp-diagram-generator"
+version = "0.1.0"
+description = "Generate draw.io architecture diagrams from Cloud Asset Inventory export snapshots"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gcp-diagram-generator = "gcp_diagram_generator.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcp-diagram-generator-graphviz"
+version = "0.1.0"
+description = "Generate GCP-icon architecture diagrams from Cloud Asset Inventory export snapshots via diagrams/Graphviz"
+requires-python = ">=3.10"
+dependencies = ["diagrams"]
+
+[project.scripts]
+gcp-diagram-generator-graphviz = "gcp_diagram_generator_graphviz.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
